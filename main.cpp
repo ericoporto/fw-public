@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 #include "FilmicCurve/FilmicColorGrading.h"
 
@@ -21,6 +22,12 @@ int main(int argc, char *argv[]) {
 
     for(int i = 0; i < curveLen; i++) {
         float v = (float)i / (curveLen - 1);
-        std::cout << v << "," << bakeParams.m_curveG[i] << std::endl;
+        std::cout
+            << std::fixed
+            << std::setprecision(3)
+            << v
+            << ","
+            << bakeParams.m_curveG[i]
+            << std::endl;
     }
 }
