@@ -1,3 +1,4 @@
+#include <cstring>
 #include "ShUtil.h"
 
 //#include "LinearAlgebraUtil.h"
